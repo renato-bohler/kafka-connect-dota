@@ -32,6 +32,6 @@ public class DotaSourceConnectorConfig extends AbstractConfig {
 	public static ConfigDef conf() {
 		return new ConfigDef().define(MATCHES_TOPIC_CONFIG, Type.STRING, Importance.HIGH, MATCHES_TOPIC_DOC)
 				.define(WEBAPI_KEY_CONFIG, Type.STRING, Importance.HIGH, WEBAPI_KEY_DOC).define(RATE_LIMIT_MS_CONFIG,
-						Type.LONG, 1500, ConfigDef.Range.atLeast(1000), Importance.MEDIUM, RATE_LIMIT_MS_DOC);
+						Type.LONG, 10000, ConfigDef.Range.atLeast(10000), Importance.MEDIUM, RATE_LIMIT_MS_DOC);
 	}
 }
