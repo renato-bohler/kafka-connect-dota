@@ -39,9 +39,7 @@ public class DotaSourceConnector extends SourceConnector {
 	public List<Map<String, String>> taskConfigs(int count) {
 		List<Map<String, String>> configs = new ArrayList<>();
 
-		for (int i = 0; i < count; i++) {
-			configs.add(this.settings);
-		}
+		configs.add(this.settings);
 
 		return configs;
 	}
