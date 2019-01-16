@@ -4,6 +4,7 @@ import java.util.List;
 
 public class ResultApi {
 	public Long status;
+	public String statusDetail;
 	public Long num_results;
 	public Long total_results;
 	public Long results_remaining;
